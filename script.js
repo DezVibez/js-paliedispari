@@ -32,7 +32,7 @@ const userValue = prompt(`Scegli un numero pari o dispari da ${min} a ${max}`, 1
 
 function cpuRandomNumber(){
 
-    randomNumber = Math.floor(Math.random() * (max - min) + min)
+    let randomNumber = Math.floor(Math.random() * (max - min) + min)
     return randomNumber
 }
 
@@ -43,7 +43,7 @@ console.log(sommaNumeri)
 
 function isEven() {
 
-    let = evenOrNot
+    let evenOrNot
 
     if (sommaNumeri % 2 == 0){
         evenOrNot = ( sommaNumeri +"  è pari")

@@ -30,7 +30,7 @@ const max = 5
 const userValue = prompt(`Scegli un numero pari o dispari da ${min} a ${max}`, 1)
 
 
-function cpuRandomNumber(){
+function getCpuRandomNumber(){
 
     let randomNumber = Math.floor(Math.random() * (max - min) + min)
     return randomNumber

@@ -21,7 +21,7 @@ Domande da farsi quando scriviamo una funzione
 // ?4 OPZIONALE:  Qualcosa  potrebbe andare storto? (se si, cosa?) */
 
 
-/*Pari e Dispari*/
+/*Pari e Dispari
 
 const min = 1
 const max = 5
@@ -64,5 +64,26 @@ if (getCpuRandomNumber < userValue) {
     console.log("hai vinto")
 }
 
-else console.log("hai perso")
+else console.log("hai perso") /*
 
+
+/*Palidroma
+Chiedere all’utente di inserire una parola
+Creare una funzione per capire se la parola inserita è palindroma*/
+
+
+function reverseWord(word) {
+    let result ='';
+
+    for (let i = word.lenght - 1; i >= 0; i--){
+        result += word[i];
+    }
+    return result
+}
+
+const parolaReversata = reverseWord('ciccio');
+
+console.log(parolaReversata)
+
+
+    

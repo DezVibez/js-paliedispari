@@ -27,8 +27,8 @@ const min = 1
 const max = 5
 
 
-const userValue = prompt(`Scegli un numero pari o dispari da ${min} a ${max}`, 1)
-
+const userValue = parseInt(prompt(`Scegli un numero pari o dispari da ${min} a ${max}`, 5))
+console.log(userValue + " tuo numero")
 
 function getCpuRandomNumber(){
 
@@ -36,29 +36,37 @@ function getCpuRandomNumber(){
     return randomNumber
 }
 
-    
-const sommaNumeri = userValue + cpuRandomNumber
-console.log(cpuRandomNumber)
-console.log(sommaNumeri)
+console.log(getCpuRandomNumber() + " numero cpu")
+
+
+let sommaNumeri = getCpuRandomNumber() + userValue
+
+
+
+
+
+console.log(sommaNumeri + " totale")
+
 
 function isEven() {
 
     let evenOrNot
 
     if (sommaNumeri % 2 == 0){
-        evenOrNot = ( sommaNumeri +"  è pari")
+        evenOrNot = ( sommaNumeri +" è pari")
     } else
-        evenOrNot = ( sommaNumeri +"  è dispari")
+        evenOrNot = ( sommaNumeri +" è dispari")
 
     return evenOrNot
 }
 
-console.log(isEven)
 
+sommaNumeri = isEven()
+console.log(sommaNumeri)
 
-if (getCpuRandomNumber > userValue){
-    console.log("il computer ha vinto")
-} else if (getCpuRandomNumber === userValue){
-    console.log("pareggio")
+if (getCpuRandomNumber < userValue) {
+    console.log("hai vinto")
 }
-    else {console.log("il computer ha vinto")}
+
+else console.log("hai perso")
+

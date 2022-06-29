@@ -55,3 +55,10 @@ function isEven() {
 
 console.log(isEven)
 
+
+if (getCpuRandomNumber > userValue){
+    console.log("il computer ha vinto")
+} else if (getCpuRandomNumber === userValue){
+    console.log("pareggio")
+}
+    else {console.log("il computer ha vinto")}

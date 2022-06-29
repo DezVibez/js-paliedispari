@@ -36,13 +36,9 @@ function getCpuRandomNumber(){
     return randomNumber
 }
 
-console.log(getCpuRandomNumber() + " numero cpu")
-
-
-let sommaNumeri = getCpuRandomNumber() + userValue
-
-
-
+let cpuNumber = getCpuRandomNumber()
+console.log(cpuNumber)
+let sommaNumeri = (cpuNumber + userValue)
 
 
 console.log(sommaNumeri + " totale")
